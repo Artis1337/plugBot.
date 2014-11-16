@@ -41,7 +41,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://github.com/Artis1337/plugBot./blob/master/lang/langIndex.json", function (json) {
+        $.get("https://github.com/Artis1337/plugBot/blob/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -171,14 +171,14 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/Artis1337/plugBot./master/plugBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Artis1337/plugBot./master/lang/en.json",
+        chatLink: "https://rawgit.com/Artis1337/plugBot./master/lt-lang.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
             botName: "plugBot",
             language: "english",
-            chatLink: "https://rawgit.com/Artis1337/plugBot./master/lang/en.json",
+            chatLink: "https://rawgit.com/Artis1337/plugBot./master/lt-lang.json",
             maximumAfk: 120,
             afkRemoval: true,
             maximumDc: 60,
